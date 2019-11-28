@@ -39,10 +39,10 @@
       <div class="ui top attached segment">
         <div class="ui middle aligned two column grid">
           <div class="column">
-            <h3 class="ui teal header">标签</h3>
+            <h3 class="ui teal header">Tags</h3>
           </div>
           <div class="right aligned column">
-            共 <h2 class="ui orange header m-inline-block m-text-thin" th:text="${#arrays.length(tags)}"> 14 </h2> 个
+            total<h2 class="ui orange header m-inline-block m-text-thin" th:text="${#arrays.length(tags)}"> 14 </h2> tags
           </div>
         </div>
       </div>
@@ -89,7 +89,7 @@
 
             <div class="five wide column">
               <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
-                <img src="https://unsplash.it/800/450?image=1005" th:src="@{${blog.firstPicture}}"  alt="" class="ui rounded image">
+                <img src="/images/wechat1.jpg" th:src="@{${blog.firstPicture}}"  alt="" class="ui rounded image">
               </a>
             </div>
 
@@ -143,7 +143,7 @@
         </div>
         <div class="seven wide column">
           <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
-          <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...</p>
+          <p class="m-text-thin m-text-spaced m-opacity-mini">Here is my personal blog, sharing my notes about Programming...</p>
         </div>
       </div>
       <div class="ui inverted section divider"></div>

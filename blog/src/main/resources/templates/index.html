@@ -42,10 +42,10 @@
           <div class="ui top attached segment">
             <div class="ui middle aligned two column grid">
               <div class="column">
-                <h3 class="ui teal header">博客</h3>
+                <h3 class="ui teal header">Blogs</h3>
               </div>
               <div class="right aligned column">
-                共 <h2 class="ui orange header m-inline-block m-text-thin" th:text="${page.totalElements}"> 14 </h2> 篇
+                total <h2 class="ui orange header m-inline-block m-text-thin" th:text="${page.totalElements}"> 14 </h2> blogs
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@
                     <div class="eleven wide column">
                       <div class="ui mini horizontal link list">
                         <div class="item">
-                          <img src="https://unsplash.it/100/100?image=1005" th:src="@{${blog.user.avatar}}"  alt="" class="ui avatar image">
+                          <img src="/images/wechat1.jpg" th:src="@{${blog.user.avatar}}"  alt="" class="ui avatar image">
                           <div class="content"><a href="#" class="header" th:text="${blog.user.nickname}" >李仁密</a></div>
                         </div>
                         <div class="item">
@@ -81,7 +81,7 @@
 
                 <div class="five wide column">
                   <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
-                    <img src="https://unsplash.it/800/450?image=1005" th:src="@{${blog.firstPicture}}"  alt="" class="ui rounded image">
+                    <img src="/images/wechat1.jpg" th:src="@{${blog.firstPicture}}"  alt="" class="ui rounded image">
                   </a>
                 </div>
 
@@ -116,7 +116,7 @@
 
                 <div class="five wide column">
                   <a href="#" target="_blank">
-                    <img src="https://unsplash.it/800/450?image=1005" alt="" class="ui rounded image">
+                    <img src="/images/wechat1.jpg" alt="" class="ui rounded image">
                   </a>
                 </div>
 
@@ -150,7 +150,7 @@
 
                 <div class="five wide column">
                   <a href="#" target="_blank">
-                    <img src="https://unsplash.it/800/450?image=1005" alt="" class="ui rounded image">
+                    <img src="/images/wechat1.jpg" alt="" class="ui rounded image">
                   </a>
                 </div>
 
@@ -184,7 +184,7 @@
 
                 <div class="five wide column">
                   <a href="#" target="_blank">
-                    <img src="https://unsplash.it/800/450?image=1005" alt="" class="ui rounded image">
+                    <img src="/images/wechat1.jpg" alt="" class="ui rounded image">
                   </a>
                 </div>
 
@@ -218,7 +218,7 @@
 
                 <div class="five wide column">
                   <a href="#" target="_blank">
-                    <img src="https://unsplash.it/800/450?image=1005" alt="" class="ui rounded image">
+                    <img src="/images/wechat1.jpg" alt="" class="ui rounded image">
                   </a>
                 </div>
 
@@ -252,7 +252,7 @@
 
                 <div class="five wide column">
                   <a href="#" target="_blank">
-                    <img src="https://unsplash.it/800/450?image=1005" alt="" class="ui rounded image">
+                    <img src="/images/wechat1.jpg" alt="" class="ui rounded image">
                   </a>
                 </div>
 
@@ -286,7 +286,7 @@
 
                 <div class="five wide column">
                   <a href="#" target="_blank">
-                    <img src="https://unsplash.it/800/450?image=1005" alt="" class="ui rounded image">
+                    <img src="/images/wechat1.jpg" alt="" class="ui rounded image">
                   </a>
                 </div>
 
@@ -320,7 +320,7 @@
 
                 <div class="five wide column">
                   <a href="#" target="_blank">
-                    <img src="https://unsplash.it/800/450?image=1005" alt="" class="ui rounded image">
+                    <img src="/images/wechat1.jpg" alt="" class="ui rounded image">
                   </a>
                 </div>
 
@@ -354,7 +354,7 @@
 
                 <div class="five wide column">
                   <a href="#" target="_blank">
-                    <img src="https://unsplash.it/800/450?image=1005" alt="" class="ui rounded image">
+                    <img src="/images/wechat1.jpg" alt="" class="ui rounded image">
                   </a>
                 </div>
 
@@ -388,7 +388,7 @@
 
                 <div class="five wide column">
                   <a href="#" target="_blank">
-                    <img src="https://unsplash.it/800/450?image=1005"  alt="" class="ui rounded image">
+                    <img src="/images/wechat1.jpg"  alt="" class="ui rounded image">
                   </a>
                 </div>
 
@@ -419,7 +419,7 @@
             <div class="ui secondary segment">
               <div class="ui two column grid">
                 <div class="column">
-                  <i class="idea icon"></i>分类
+                  <i class="idea icon"></i>types
                 </div>
                 <div class="right aligned column">
                   <a href="#" th:href="@{types/-1}" target="_blank">more <i class="angle double right icon"></i></a>
@@ -463,7 +463,7 @@
             <div class="ui secondary segment">
               <div class="ui two column grid">
                 <div class="column">
-                  <i class="tags icon"></i>标签
+                  <i class="tags icon"></i>tags
                 </div>
                 <div class="right aligned column">
                   <a href="#" th:href="@{tags/-1}" target="_blank">more <i class="angle double right icon"></i></a>
@@ -509,7 +509,7 @@
           <!--最新推荐-->
           <div class="ui segments m-margin-top-large">
             <div class="ui secondary segment ">
-              <i class="bookmark icon"></i>最新推荐
+              <i class="bookmark icon"></i>Newest Promotion
             </div>
             <div class="ui segment" th:each="blog : ${recommendBlogs}">
               <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black m-text-thin" th:text="${blog.title}">用户故事（User Story）</a>
@@ -540,7 +540,7 @@
           </div>
 
           <!--二维码-->
-          <h4 class="ui horizontal divider header m-margin-top-large">扫码关注我</h4>
+          <h4 class="ui horizontal divider header m-margin-top-large">Scan to contact me</h4>
           <div class="ui centered card" style="width: 11em">
             <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" alt="" class="ui rounded image" >
           </div>
@@ -575,13 +575,13 @@
         <div class="three wide column">
           <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
           <div class="ui inverted link list">
-            <a href="#" class="item m-text-thin">Email：lirenmi@163.com</a>
+            <a href="#" class="item m-text-thin">Email：wangdiao001@gmail.com</a>
             <a href="#" class="item m-text-thin">QQ：865729312</a>
           </div>
         </div>
         <div class="seven wide column">
           <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
-          <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...</p>
+          <p class="m-text-thin m-text-spaced m-opacity-mini">Here is my personal blog, sharing my notes about Programming...</p>
         </div>
       </div>
       <div class="ui inverted section divider"></div>

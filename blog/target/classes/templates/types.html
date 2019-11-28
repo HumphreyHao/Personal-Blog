@@ -39,10 +39,10 @@
       <div class="ui top attached segment">
         <div class="ui middle aligned two column grid">
           <div class="column">
-            <h3 class="ui teal header">分类</h3>
+            <h3 class="ui teal header">Types</h3>
           </div>
           <div class="right aligned column">
-            共 <h2 class="ui orange header m-inline-block m-text-thin" th:text="${#arrays.length(types)}"> 14 </h2> 个
+           total <h2 class="ui orange header m-inline-block m-text-thin" th:text="${#arrays.length(types)}"> 14 </h2> types
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@
 
             <div class="five wide column">
               <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
-                <img src="https://unsplash.it/800/450?image=1005" th:src="@{${blog.firstPicture}}"  alt="" class="ui rounded image">
+                <img src="/images/wechat1.jpg" th:src="@{${blog.firstPicture}}"  alt="" class="ui rounded image">
               </a>
             </div>
 
